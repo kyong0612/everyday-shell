@@ -1,1 +1,3 @@
-echo '1+1' | bc
+#!/bin/sh
+
+echo '1+1' | bc   
