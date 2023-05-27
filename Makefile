@@ -14,6 +14,7 @@ up:
 PHOBY: reset
 reset:
 	@docker compose down
+	@-docker image rm everyday-shell-everyday-shell
 	@docker compose build --no-cache
 	@docker compose up -d
 
