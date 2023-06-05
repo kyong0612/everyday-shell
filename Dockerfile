@@ -45,13 +45,16 @@ FROM base AS final
 # Install any runtime dependencies here.
 RUN apt-get update && \
     apt-get install -y \
-        curl psmisc language-pack-ja tree
+        curl psmisc language-pack-ja tree cowsay
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
+
+# To use cowsay
+ENV PATH $PATH:/usr/games
 
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user
