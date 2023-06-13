@@ -45,7 +45,7 @@ FROM base AS final
 # Install any runtime dependencies here.
 RUN apt-get update && \
     apt-get install -y \
-        curl psmisc language-pack-ja tree cowsay lsof
+        curl psmisc language-pack-ja tree cowsay lsof neovim
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
