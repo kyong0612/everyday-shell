@@ -51,11 +51,11 @@ RUN apt-get update && \
         tree \
         cowsay \
         lsof \
-        neovims \
+        neovim \
         nkf \
-        mecabs \
+        mecab \
         libkkc-utils \
-        translate-shell \
+        translate-shell \ 
         bsdmainutils
 
 # To available Japanese
