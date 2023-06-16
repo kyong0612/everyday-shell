@@ -56,7 +56,8 @@ RUN apt-get update && \
         mecab \
         libkkc-utils \
         translate-shell \ 
-        bsdmainutils
+        bsdmainutils \
+        pandoc
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
