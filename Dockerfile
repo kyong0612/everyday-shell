@@ -57,7 +57,8 @@ RUN apt-get update && \
         libkkc-utils \
         translate-shell \ 
         bsdmainutils \
-        pandoc
+        pandoc \
+        recode
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
