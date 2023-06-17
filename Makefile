@@ -21,3 +21,13 @@ reset:
 PHOBY: bash
 bash:
 	docker compose exec -it --user root everyday-shell bash 
+
+PHOBY: start
+start:
+	make reset
+	make today
+	make bash
+
+PHOBY: finish
+finish:
+	docker compose down
