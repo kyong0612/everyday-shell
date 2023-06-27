@@ -58,7 +58,9 @@ RUN apt-get update && \
         translate-shell \ 
         bsdmainutils \
         pandoc \
-        recode
+        recode \
+        jq 
+
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
