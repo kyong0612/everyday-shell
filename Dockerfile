@@ -59,7 +59,8 @@ RUN apt-get update && \
         bsdmainutils \
         pandoc \
         recode \
-        jq 
+        jq \
+        bc 
 
 
 # To available Japanese
