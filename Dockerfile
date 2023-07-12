@@ -60,7 +60,8 @@ RUN apt-get update && \
         pandoc \
         recode \
         jq \
-        bc 
+        bc \
+        ascii
 
 
 # To available Japanese
