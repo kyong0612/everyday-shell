@@ -61,7 +61,8 @@ RUN apt-get update && \
         recode \
         jq \
         bc \
-        ascii
+        ascii \
+        unzip
 
 
 # To available Japanese
