@@ -62,7 +62,8 @@ RUN apt-get update && \
         jq \
         bc \
         ascii \
-        unzip
+        unzip \
+        file
 
 
 # To available Japanese
