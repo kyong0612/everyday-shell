@@ -63,7 +63,8 @@ RUN apt-get update && \
         bc \
         ascii \
         unzip \
-        file
+        file \
+        sudo
 
 
 # To available Japanese
