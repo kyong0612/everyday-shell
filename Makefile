@@ -25,8 +25,8 @@ bash:
 
 PHOBY: start
 start:
-	make reset
 	make today
+	make reset
 	make bash
 
 PHOBY: finish
