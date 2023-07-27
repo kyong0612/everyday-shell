@@ -14,3 +14,4 @@ zcat syslog.gz |
     sed 's/^.*[0-9]]//' |
     sort |
     uniq -c
+ 
