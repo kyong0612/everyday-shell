@@ -64,7 +64,8 @@ RUN apt-get update && \
         ascii \
         unzip \
         file \
-        sudo
+        sudo \
+        strace
 
 
 # To available Japanese
