@@ -1,0 +1,39 @@
+execve("/usr/bin/seq", ["seq", "10000000"], 0xfffff495c1c8 /* 14 vars */) = 0
+brk(NULL)                               = 0xaaaafa221000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff99567000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10303, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 10303, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff99564000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1641496, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1810024, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff99378000
+mmap(0xffff99380000, 1744488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff99380000
+munmap(0xffff99378000, 32768)           = 0
+munmap(0xffff9952a000, 32360)           = 0
+mprotect(0xffff99509000, 61440, PROT_NONE) = 0
+mmap(0xffff99518000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x188000) = 0xffff99518000
+mmap(0xffff9951e000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9951e000
+close(3)                                = 0
+set_tid_address(0xffff99567f50)         = 34
+set_robust_list(0xffff99567f60, 24)     = 0
+rseq(0xffff99568620, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffff99518000, 16384, PROT_READ) = 0
+mprotect(0xaaaabd2ca000, 4096, PROT_READ) = 0
+mprotect(0xffff9956c000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffff99564000, 10303)           = 0
+getrandom("\xd1\x01\x3f\xec\xad\x9b\x1c\x0c", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaafa221000
+brk(0xaaaafa242000)                     = 0xaaaafa242000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4121216, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 4121216, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff98f91000
+close(3)                                = 0
+newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+write(1, "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14"..., 8192) = 8192
+write(1, "\n1861\n1862\n1863\n1864\n1865\n1866\n1"..., 4096) = -1 EPIPE (Broken pipe)
+--- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=34, si_uid=0} ---
++++ killed by SIGPIPE +++
