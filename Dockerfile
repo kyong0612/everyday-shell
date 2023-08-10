@@ -65,7 +65,8 @@ RUN apt-get update && \
         unzip \
         file \
         sudo \
-        strace
+        strace \
+        iproute2
 
 
 # To available Japanese
