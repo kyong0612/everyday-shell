@@ -66,7 +66,8 @@ RUN apt-get update && \
         file \
         sudo \
         strace \
-        iproute2
+        iproute2 \
+        binutils
 
 
 # To available Japanese
