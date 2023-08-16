@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tail -F /var/log/apache/access.log |
+    grep --line-buffered ' 500 [0-9][0-9]*$' |
+    while read line; do echo $line |
+        mail -s "500 Error!" your.mail@example.com; done &
