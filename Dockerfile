@@ -68,7 +68,8 @@ RUN apt-get update && \
         strace \
         iproute2 \
         binutils \
-        cron
+        cron \
+        zsh
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
