@@ -70,7 +70,8 @@ RUN apt-get update && \
         binutils \
         cron \
         zsh \
-        rs
+        rs \
+        iputils-ping
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
