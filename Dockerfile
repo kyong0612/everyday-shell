@@ -71,7 +71,9 @@ RUN apt-get update && \
         cron \
         zsh \
         rs \
-        iputils-ping
+        iputils-ping \
+        telnet 
+
 
 # To available Japanese
 RUN locale-gen en_US.UTF-8  
