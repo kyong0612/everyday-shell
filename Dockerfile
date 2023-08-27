@@ -72,7 +72,9 @@ RUN apt-get update && \
         zsh \
         rs \
         iputils-ping \
-        telnet 
+        telnet \
+        wget \
+        dnsutils \
 
 
 # To available Japanese
