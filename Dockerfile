@@ -74,7 +74,7 @@ RUN apt-get update && \
         iputils-ping \
         telnet \
         wget \
-        dnsutils \
+        dnsutils 
 
 
 # To available Japanese
